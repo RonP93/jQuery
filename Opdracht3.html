@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+<title>Opdracht 3</title>
+
+<style>
+.blok1, .blok2 {display:inline-block; width:230px; height:230px; border:1px solid black;}
+</style>
+
+</head>
+<body>
+
+<div class="blok1"></div>
+<div class="blok2"></div>
+	<br><button class="reset">Reset</button>
+	<script>
+	$(".blok1").mouseover(function() {
+		$(this).css ("background-color", "green");
+	});
+	
+	$(".blok2").mouseover(function() {
+		$(this).css ("background-color", "purple");
+	});
+	
+	$(".blok1, .blok2").mouseout(function() {
+		$(this).css ("background-color", "blue");
+	});
+	
+	$(".reset").click(function() {
+		$(".blok1, .blok2").css ("background-color", "white");
+	});
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<title>Opdracht 2.2</title>
+</head>
+<body>
+<ul id="apen">
+<li id="apen1">Doodshoofdaapje</li>
+<li>Oerang Oetang</li>
+<li>Gorilla</li>
+</ul>
+
+<ul id="auto">
+<li id="auto1">Mercedes</li>
+<li>BMW</li>
+<li>Lamborghini</li>
+</ul>
+
+<button id="button">Rood</button>
+<button id="button1">Groen</button>
+<button id="button2">Blauw</button>
+
+<script>
+	$("button#button").click(function() {
+    $("ul#apen").css("color", "red");   
+	});
+</script>
+
+<script>
+	$("button#button1").click(function() {
+    $("ul#auto").css("color", "green");   
+	});
+</script>
+
+<script>
+	$("button#button2").click(function() {
+    $("li#apen1").css("color", "blue");   
+	});
+
+	$("button#button2").click(function() {
+    $("li#auto1").css("color", "blue");   
+	});
+</script>
+
+</body>
+</html>

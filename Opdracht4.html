@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<title>Opdracht 4</title>
+
+<style>
+body, form, div {
+	text-align: center;
+	background-color: gray;
+	font: 16px Arial;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	}
+</style>
+
+</head>
+<body>
+
+<form>
+<label>Hier voert u een getal in tussen 1 en 10.</label>
+<input type="text" id="input" name="input" value="">
+<input type="button" value="check" onclick="check()">
+</form>
+
+<div id="resultaat"></div>
+
+</body>
+<script>
+	function check() {
+		var x = $('#input').val();
+		var text = "";
+		
+		if (x > 0 && x <= 10) {
+			text = "Getal is ok";
+		}
+		else {
+			text = "Getal is niet ok";
+		}
+		$('#resultaat').html(text);
+	}
+	</script>
+
+</html>
